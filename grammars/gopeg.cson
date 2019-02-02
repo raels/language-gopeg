@@ -1,8 +1,11 @@
+name: 'gopeg'
+scopeName: 'source.gopeg'
+type: 'tree-sitter'
+parser: 'tree-sitter-mylanguage'
 'fileTypes': [
 	"gopeg"
 	"peg"
 ]
-'name': 'PEG/GOPEG File'
 'foldingStartMarker': "\\{\\s*$"
 'foldingStopMarker': "^\\s*\\}"
 'patterns': [
@@ -110,4 +113,3 @@ repository:
 				"include": "source.go"
 			}
 		]
-'scopeName': 'source.peg'
