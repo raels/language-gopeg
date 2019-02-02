@@ -1,14 +1,19 @@
 {
-  "name": "language-peg-pegjs",
+  "name": "language-gopeg",
   "version": "0.1.0",
-  "description": ".peg, .pegjs file syntax highlighting",
+  "description": ".peg, .gopeg file syntax highlighting",
   "keywords": [
     "language",
-    "grammar"
+    "grammar",
+    "peg",
+    "gopeg"
   ],
-  "repository": "https://github.com/nevernet/atom-peg-language",
+  "repository": "https://github.com/raels/language-gopeg",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "nan": "^2.12.1"
   }
 }

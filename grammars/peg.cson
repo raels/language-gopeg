@@ -37,54 +37,54 @@ repository:
 			{
 				"begin":"/\\*"
 				"end": "\\*/"
-				"name" : "comment.block.peggo"
+				"name" : "comment.block.gopeg"
 			}
 			{
 				"match": "//.*$\\n?"
-				"name" : "comment.line.double-slash.peggo"
+				"name" : "comment.line.double-slash.gopeg"
 			}
 			{
 				"match": "#.*$\\n?"
-				"name" : "comment.line.hash.peggo"
+				"name" : "comment.line.hash.gopeg"
 			}
 		]
 	label:
 		match: "(\\w+)\\s*(?=:)"
 		captures:
 			"1":
-				name: "entity.other.attribute-name.attribute.peggo"
+				name: "entity.other.attribute-name.attribute.gopeg"
 	rule:
 		match: "[a-zA-Z_][a-zA-Z_0-9]*"
-		name: "entity.name.function.peggo"
+		name: "entity.name.function.gopeg"
 	literal:
 		patterns: [
 			{
 				"begin": "\""
 				"end": "\""
-				"name": "string.quoted.double.peggo"
+				"name": "string.quoted.double.gopeg"
 				"patterns": [
 					{
 						"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)"
-						"name": "constant.character.escape.peggo"
+						"name": "constant.character.escape.gopeg"
 					}
 					{
 						"match": "[^\"]*[^\\n\\r\"\\\\]$"
-						"name": "invalid.illegal.string.peggo"
+						"name": "invalid.illegal.string.gopeg"
 					}
 				]
 			}
 			{
 				"begin": "'"
 				"end": "'"
-				"name": "string.quoted.single.peggo"
+				"name": "string.quoted.single.gopeg"
 				"patterns": [
 					{
 						"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)"
-						"name": "constant.character.escape.peggo"
+						"name": "constant.character.escape.gopeg"
 					}
 					{
 						"match": "[^\"]*[^\\n\\r\"\\\\]$"
-						"name": "invalid.illegal.string.peggo"
+						"name": "invalid.illegal.string.gopeg"
 					}
 				]
 			}
@@ -92,19 +92,19 @@ repository:
 	charclass:
 		begin: "\\["
 		end: "\\]"
-		name: "declaration.keyword.peggo"
+		name: "declaration.keyword.gopeg"
 	defRule:
 		match: "(\\w+)\\s*(?=\\=)"
 		captures:
 			"1":
-				name: "entity.name.function.peggo"
+				name: "entity.name.function.gopeg"
 	operators:
 		match: "[*?/.$!=+&]"
-		name: "keyword.operator.peggo"
+		name: "keyword.operator.gopeg"
 	inlinego:
 		begin: "{"
 		end: "}"
-		name: "source.go.embedded.peggo"
+		name: "source.go.embedded.gopeg"
 		patterns: [
 			{
 				"include": "source.go"
