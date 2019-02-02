@@ -1,7 +1,6 @@
 name: 'gopeg'
 scopeName: 'source.gopeg'
-type: 'tree-sitter'
-'fileTypes': [
+fileTypes: [
 	"gopeg"
 	"peg"
 ]
