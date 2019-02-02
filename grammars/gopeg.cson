@@ -84,7 +84,7 @@ repository:
 						"name": "constant.character.escape.gopeg"
 					}
 					{
-						"match": "[^\"]*[^\\n\\r\"\\\\]$"
+						"match": "[^\']*[^\\n\\r\'\\\\]$"
 						"name": "invalid.illegal.string.gopeg"
 					}
 				]
