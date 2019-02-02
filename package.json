@@ -1,6 +1,6 @@
 {
   "name": "language-gopeg",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": ".peg, .gopeg file syntax highlighting",
   "keywords": [
     "language",
@@ -8,7 +8,7 @@
     "peg",
     "gopeg"
   ],
-  "repository": "https://github.com/raels/language-gopeg",
+  "repository": "https://github.com/raels/language-gopeg.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
