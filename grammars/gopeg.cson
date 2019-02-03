@@ -113,7 +113,7 @@ repository:
 		end: "\\]"
 		name: "declaration.keyword.gopeg"
 	defRule:
-		match: "(\\w+)\\s*(?=<-)"
+		match: "(\\w+)\\s*((?=<-)|(?=←))"
 		captures:
 			"1":
 				name: "entity.name.function.gopeg"
