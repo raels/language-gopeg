@@ -1,7 +1,19 @@
 # If you want some example snippets, check out:
 # https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
 
-'.source.abcd':
+'.source.gopeg':
   'Method documentation':
     'prefix': 'doc'
     'body': '@@ ${1:method} - ${2:description}'
+  'Expression Precedence':
+    'prefix': 'exp'
+    'body': '---
+# Expression parsing option
+%expr  = $1{:expr}   # Rule to which to apply the precedence climbing method
+%binop = L <= <> < >= > # Precedence Level 1
+%binop = L + -  # Precedence level 2
+%binop = L * /  # Precedence level 3
+'
+  'Rule':
+    'prefix': 'ru'
+    'body': ' ${1:nonterminal} <- ${2:rulebody}'
