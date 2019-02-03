@@ -7,12 +7,12 @@
     'body': '@@ ${1:method} - ${2:description}'
   'Expression Precedence':
     'prefix': 'exp'
-    'body': '---
-# Expression parsing option
-%expr  = $1{:expr}   # Rule to which to apply the precedence climbing method
-%binop = L <= <> < >= > # Precedence Level 1
-%binop = L + -  # Precedence level 2
-%binop = L * /  # Precedence level 3
+    'body': '---\n
+# Expression parsing option\n
+%expr  = $1{:expr}   # Rule to which to apply the precedence climbing method\n
+%binop = L <= <> < >= > # Precedence Level 1\n
+%binop = L + -  # Precedence level 2\n
+%binop = L * /  # Precedence level 3\n
 '
   'Rule':
     'prefix': 'ru'
