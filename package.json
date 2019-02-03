@@ -1,6 +1,6 @@
 {
   "name": "language-gopeg",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": ".peg, .gopeg file syntax highlighting",
   "keywords": [
     "language",
