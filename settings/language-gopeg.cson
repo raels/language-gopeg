@@ -3,4 +3,13 @@
 
 '.source.gopeg':
   'editor':
-    'commentStart': '@@ '
+    'commentStart': '#  '
+  'bracket-matcher':
+      autocompleteCharacters: [
+        '()'
+        '[]'
+        '{}'
+        '<>'
+        '""'
+        "''"
+      ]
