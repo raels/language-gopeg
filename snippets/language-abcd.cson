@@ -9,7 +9,7 @@
     'prefix': 'exp'
     'body': '---\n
 # Expression parsing option\n
-%expr  = $1{:expr}   # Rule to which to apply the precedence climbing method\n
+%expr  = ${1:EXPR}   # Rule to which to apply the precedence climbing method\n
 %binop = L <= <> < >= > # Precedence Level 1\n
 %binop = L + -  # Precedence level 2\n
 %binop = L * /  # Precedence level 3\n
